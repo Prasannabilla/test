@@ -126,9 +126,25 @@ h1 {
         left: 30%;
         // visibility: hidden;
     }
+
     h1 {
-        
+
         margin-left: 11%;
         /* Set your reduced font size for smaller screens */
     }
+}
+
+.happyimage {
+    position: absolute;
+    top: 40%;
+    left: 41.5%;
+    background-image: url(../../../assets/tobiobito.gif) !important;
+    height: 8rem;
+    width: 18rem;
+    background-size: cover;
+    /* Ensure the image covers the entire container */
+    background-position: center;
+    /* Center the image within the container */
+    background-repeat: no-repeat;
+
 }

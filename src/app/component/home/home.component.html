@@ -5,7 +5,10 @@
         <!-- Your content goes here -->
         <h1 class="mt-5">{{msg}}</h1>
     </div>
-    <img *ngIf="yesimag" class="happy" src="../../../assets/tobiobito.gif" alt="tobitoimage">
+    <!-- <img *ngIf="yesimag" class="happy" src="../../../assets/tobiobito.gif" alt="tobitoimage"> -->
+    <div *ngIf="yesimag"  class="happyimage">
+
+    </div>
     <div class="billa">
         <button class="btn btn-info me-3 custombutton1" (click)="toggleyes()">YES</button>
         <!-- <button class="btn btn-info ms-3 custombutton">NO</button> -->
