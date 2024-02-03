@@ -6,14 +6,14 @@
 }
 
 .prompt {
-    position: absolute;
-    top: 6rem;
+    // position: absolute;
+    // top: 6rem;
     // background-color: #FFE5E5;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    left:4rem
+    // left:4rem
 }
 
 /* Optional: Add some styling for the "billa" div */
@@ -29,7 +29,6 @@
     position: relative;
     color: aliceblue;
     width: 5rem;
-    top: 5.9rem;
     right: 4.5rem;
 
 
@@ -112,6 +111,21 @@ h1 {
     // visibility: hidden;
 }
 
+
+.happyimage {
+    position: absolute;
+    top: 40%;
+    left: 41.5%;
+    background-image: url(../../../assets/tobiobito.gif) !important;
+    height: 8rem;
+    width: 18rem;
+    background-size: cover;
+    /* Ensure the image covers the entire container */
+    background-position: center;
+    /* Center the image within the container */
+    background-repeat: no-repeat;
+
+}
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 3.5rem;
@@ -133,19 +147,19 @@ h1 {
         margin-left: 11%;
         /* Set your reduced font size for smaller screens */
     }
-}
 
-.happyimage {
-    position: absolute;
-    top: 40%;
-    left: 41.5%;
-    background-image: url(../../../assets/tobiobito.gif) !important;
-    height: 8rem;
-    width: 18rem;
-    background-size: cover;
-    /* Ensure the image covers the entire container */
-    background-position: center;
-    /* Center the image within the container */
-    background-repeat: no-repeat;
-
+    .happyimage {
+        position: absolute;
+        top: 40%;
+        left: 28%;
+        background-image: url(../../../assets/tobiobito.gif) !important;
+        height: 8rem;
+        width: 15rem;
+        background-size: cover;
+        /* Ensure the image covers the entire container */
+        background-position: center;
+        /* Center the image within the container */
+        background-repeat: no-repeat;
+    
+    }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -16,8 +16,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ]),
   ], 
 })
-export class HomeComponent {
-  buttonPosition: ButtonPosition = { top: '63%', left: '50%' };
+export class HomeComponent  implements OnInit{
+  buttonPosition: ButtonPosition = { top: '67%', left: '50%' };
   clickedcount: number = 1;
   image:boolean=false
   performAnimation: boolean = false;
@@ -26,6 +26,17 @@ export class HomeComponent {
   msg:string='Will you go out with me?'
   windowWidth: number = window.innerWidth;
   windowHeight: number = window.innerHeight;
+  ngOnInit() {
+    this.buttonPosition = {
+      top: `73%`,
+      left: `50%`
+    };
+    if(this.windowWidth<450){
+    
+        this.buttonPosition = { top: '67%', left: '50%' };
+    }
+
+  }
   toggleAnimation() {
     this.performAnimation = !this.performAnimation;
   
