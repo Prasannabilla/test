@@ -17,7 +17,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ], 
 })
 export class HomeComponent {
-  buttonPosition: ButtonPosition = { top: '61.5%', left: '50%' };
+  buttonPosition: ButtonPosition = { top: '63%', left: '50%' };
   clickedcount: number = 1;
   image:boolean=false
   performAnimation: boolean = false;
