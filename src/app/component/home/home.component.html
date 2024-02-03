@@ -1,0 +1,22 @@
+<div [ngStyle]="{'background-image': image ? 'url(../../../assets/obitosharingan.gif)' : 'none'}" [ngClass]="{'special-background': image}">
+    <div class="prompt">
+        <!-- app.component.html -->
+        <!-- Your content goes here -->
+        <h1 class="mt-5">{{msg}}</h1>
+    </div>
+    <img *ngIf="yesimag" class="happy"src="../../../assets/to.gif" alt="tobitoimage">
+    <div class="billa">
+        <button class="btn btn-info me-3 custombutton1" (click)="toggleyes()">YES</button>
+        <!-- <button class="btn btn-info ms-3 custombutton">NO</button> -->
+        <!-- app.component.html -->
+        <button *ngIf="buttonhide" class="btn btn-info ms-3 custombutton" [style.top]="buttonPosition.top"
+            [style.left]="buttonPosition.left" [class.animation-class]="performAnimation" (click)="toggleAnimation()">NO</button>
+            
+            <!-- app.component.html -->
+            <!-- app.component.html -->
+            <!-- app.component.html -->
+            <!-- <button [class.animation-class]="performAnimation" (click)="toggleAnimation()">Click me</button> -->
+            
+        </div>
+    </div>
+    <!-- <img src="../../../assets/to.gif" alt=""> -->

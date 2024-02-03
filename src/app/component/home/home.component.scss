@@ -1,0 +1,134 @@
+.billa {
+    // background-color: #FFE5E5;
+
+    height: 40rem;
+    width: 100%;
+}
+
+.prompt {
+    position: absolute;
+    top: 8rem;
+    // background-color: #FFE5E5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Optional: Add some styling for the "billa" div */
+.billa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Set height to 100% of the viewport height for vertical centering */
+}
+
+.custombutton1 {
+    position: relative;
+    color: aliceblue;
+    width: 5rem;
+    top: 5.9rem;
+    right: 4.5rem;
+
+
+}
+
+/* app.component.css */
+.custombutton {
+    position: absolute;
+    color: aliceblue;
+    width: 5rem;
+    transition: top 0.3s ease, left 0.3s ease;
+
+}
+
+div {
+    font-family: Courier, monospace;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+        /* Set your reduced font size for smaller screens */
+    }
+}
+
+/* app.component.css */
+.special-background {
+    /* Additional styles for the special background condition */
+    background-image: url(../../../assets/obitosharingan.gif) !important;
+    background-size: cover;
+    /* Ensure the image covers the entire container */
+    background-position: center;
+    /* Center the image within the container */
+    background-repeat: no-repeat;
+    /* Do not repeat the background image */
+    /* Add any other styles as needed */
+    //  transform: scaleX(-1);
+}
+
+/* styles.css */
+@keyframes rotateFadeHide {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        opacity: 0.7;
+        transform: rotate(120deg);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        opacity: 0.2;
+        transform: rotate(280deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+.animation-class {
+    animation: rotateFadeHide 3s ease;
+}
+
+.happy {
+    position: absolute;
+    top: 40%;
+    left: 41.5%;
+    // visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+        /* Set your reduced font size for smaller screens */
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .happy {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        // visibility: hidden;
+    }
+    h1 {
+        
+        margin-left: 11%;
+        /* Set your reduced font size for smaller screens */
+    }
+}
